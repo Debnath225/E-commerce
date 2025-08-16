@@ -4,37 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aura - Modern E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
     
-    <!-- Google Fonts for a modern look -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
 
-    <style>
-        /* --- 1. General Styling & Variables --- */
-        :root {
-            --primary-color: #6a11cb;
-            --secondary-color: #2575fc;
-            --background-color: #f4f7fc;
-            --card-background: #ffffff;
-            --text-color: #333;
-            --shadow-color: rgba(100, 100, 150, 0.2);
-            --light-text: #777;
-        }
+    <header class="container">
+        <div class="logo-container">
+            <div class="cube">
+                <div class="face front"></div>
+                <div class="face back"></div>
+                <div class="face right"></div>
+                <div class="face left"></div>
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+            </div>
+            <span class="logo-text">Aura</span>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    <main class="container">
+        <!-- Section 1: Featured Products (Grid Layout) -->
+        <section class="product-section">
+            <h2 class="section-title">Featured Products</h2>
+            <div id="featured-products" class="product-grid">
+                <!-- Products will be injected here by JavaScript -->
+            </div>
+        </section>
 
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
+        <!-- Section 2: New Arrivals (Horizontal Scroll Layout) -->
+        <section class="product-section">
+            <h2 class="section-title">New Arrivals</h2>
+            <div id="new-arrivals" class="product-scroll">
+                <!-- Products will be injected here by JavaScript -->
+            </div>
+        </section>
+        
+        <!-- Section 3: On Sale (Grid Layout) -->
+        <section class="product-section">
+            <h2 class="section-title">On Sale</h2>
+            <div id="on-sale" class="product-grid">
+                <!-- Products will be injected here by JavaScript -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Aura. All Rights Reserved.</p>
+    </footer>
 
+    <!-- GSAP Plugin for advanced animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <!-- Your Custom JavaScript File -->
+    <script src="script.js"></script>
+</body>
+    </html>
         .container {
             max-width: 1200px;
             margin: 0 auto;
