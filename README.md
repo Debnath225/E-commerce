@@ -57,7 +57,7 @@ This is the simplest method if you have Node.js installed.
 1.  **Clone or download this repository.**
 2.  **Navigate to the project directory** in your terminal:
     ```bash
-    cd ecommerce-site
+    cd E-commerce
     ```
 3.  **Run the `http-server` command** using `npx` (this requires no installation):
     ```bash
